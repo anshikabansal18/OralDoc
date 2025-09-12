@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* OralVis Healthcare Design System - Medical/Dental Theme */
+
+@layer base {
+  :root {
+    /* Medical Blue Theme */
+    --background: 0 0% 100%;
+    --foreground: 213 31% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 31% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 31% 10%;
+
+    /* Primary Medical Blue */
+    --primary: 213 93% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 213 93% 85%;
+    --primary-dark: 213 93% 40%;
+
+    /* Secondary Light Blue */
+    --secondary: 213 100% 95%;
+    --secondary-foreground: 213 93% 56%;
+
+    /* Muted Medical Grays */
+    --muted: 213 27% 96%;
+    --muted-foreground: 213 27% 46%;
+
+    /* Accent for Success States */
+    --accent: 142 72% 29%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Medical Alert Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    /* UI Elements */
+    --border: 213 27% 90%;
+    --input: 213 27% 94%;
+    --ring: 213 93% 56%;
+
+    /* Medical Report Colors */
+    --report-header: 213 93% 56%;
+    --report-background: 0 0% 100%;
+    --annotation-colors: {
+      inflammation: 0 84% 60%;
+      cavity: 25 95% 50%;  
+      misalignment: 271 81% 56%;
+      plaque: 45 93% 47%;
+      healthy: 142 72% 29%;
+    };
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
+    --gradient-report: linear-gradient(180deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    
+    /* Shadows */
+    --shadow-medical: 0 4px 20px -4px hsl(var(--primary) / 0.15);
+    --shadow-card: 0 2px 10px -2px hsl(213 27% 84% / 0.3);
+
+    /* Animations */
+    --transition-medical: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Sidebar Medical Theme */
+    --sidebar-background: 213 100% 98%;
+    --sidebar-foreground: 213 31% 10%;
+    --sidebar-primary: 213 93% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 213 100% 95%;
+    --sidebar-accent-foreground: 213 93% 56%;
+    --sidebar-border: 213 27% 90%;
+    --sidebar-ring: 213 93% 56%;
+  }
+
+  .dark {
+    /* Medical Dark Mode - Optional, focusing on light theme */
+    --background: 213 31% 5%;
+    --foreground: 213 100% 95%;
+    --card: 213 31% 8%;
+    --card-foreground: 213 100% 95%;
+    --popover: 213 31% 8%;
+    --popover-foreground: 213 100% 95%;
+    --primary: 213 93% 70%;
+    --primary-foreground: 213 31% 5%;
+    --secondary: 213 31% 12%;
+    --secondary-foreground: 213 100% 95%;
+    --muted: 213 31% 12%;
+    --muted-foreground: 213 27% 65%;
+    --accent: 142 72% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 70%;
+    --destructive-foreground: 213 31% 5%;
+    --border: 213 31% 18%;
+    --input: 213 31% 15%;
+    --ring: 213 93% 56%;
+    --sidebar-background: 213 31% 8%;
+    --sidebar-foreground: 213 100% 95%;
+    --sidebar-primary: 213 93% 70%;
+    --sidebar-primary-foreground: 213 31% 5%;
+    --sidebar-accent: 213 31% 12%;
+    --sidebar-accent-foreground: 213 100% 95%;
+    --sidebar-border: 213 31% 18%;
+    --sidebar-ring: 213 93% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-foreground;
+  }
+}
+
+@layer components {
+  /* Medical Button Variants */
+  .btn-medical {
+    @apply bg-gradient-to-r from-primary to-primary-dark text-primary-foreground px-6 py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300 hover:scale-105;
+    box-shadow: var(--shadow-medical);
+  }
+  
+  .btn-medical-outline {
+    @apply border-2 border-primary text-primary bg-transparent px-6 py-3 rounded-lg font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300;
+  }
+
+  /* Report Header Styling */
+  .report-header {
+    @apply bg-gradient-to-r from-primary to-primary-dark text-white py-8 px-6 rounded-t-lg;
+  }
+
+  /* Annotation Colors */
+  .annotation-inflammation {
+    @apply bg-red-500;
+  }
+  
+  .annotation-cavity {
+    @apply bg-orange-500;
+  }
+  
+  .annotation-misalignment {
+    @apply bg-purple-500;
+  }
+  
+  .annotation-plaque {
+    @apply bg-yellow-500;
+  }
+  
+  .annotation-healthy {
+    @apply bg-green-600;
+  }
+
+  /* Medical Card Styling */
+  .medical-card {
+    @apply bg-card border border-border rounded-xl p-6 transition-all duration-300;
+    box-shadow: var(--shadow-card);
+  }
+  
+  .medical-card:hover {
+    box-shadow: var(--shadow-medical);
+  }
+
+  /* Professional Form Styling */
+  .medical-form {
+    @apply space-y-6 bg-card p-8 rounded-xl border border-border;
+    box-shadow: var(--shadow-card);
+  }
+}
