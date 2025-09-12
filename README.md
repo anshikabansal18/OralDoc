@@ -1,73 +1,77 @@
-# Welcome to your Lovable project
+# 🦷 Dental Annotate Report
 
-## Project info
+An interactive dental annotation and reporting web application built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. The app provides annotation tools, patient image upload, authentication, and PDF report generation.
 
-**URL**: https://lovable.dev/projects/7564a4b2-ecbd-422e-8072-89b3df5476a4
+---
 
-## How can I edit this code?
+## 🚀 Features
+- 🔐 User authentication (Login & Register)  
+- 🖊️ Annotation canvas for marking dental images  
+- 📂 Patient image upload  
+- 📑 PDF report generation  
+- 🎨 Modern UI with Tailwind CSS  
+- ⚡ Fast development with Vite  
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 📦 Tech Stack
+- **Frontend:** React, TypeScript, Vite  
+- **Styling:** Tailwind CSS  
+- **Linting & Formatting:** ESLint  
+- **Build Tool:** Vite  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7564a4b2-ecbd-422e-8072-89b3df5476a4) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Setup Instructions
 
-**Use your preferred IDE**
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/dental-annotate-report.git
+cd dental-annotate-report-main
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. Install Dependencies
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Using npm:
 
-Follow these steps:
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Or using bun (if installed):
 
-# Step 3: Install the necessary dependencies.
-npm i
+bun install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Run Development Server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This starts the app at http://localhost:5173
+.
 
-**Use GitHub Codespaces**
+4. Build for Production
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+5. Preview Production Build
+npm run preview
 
-## What technologies are used for this project?
+📂 Project Structure
+├── public/             # Static assets (favicon, robots.txt, etc.)
+├── src/                # Main source code
+│   ├── components/     # UI components (annotation, auth, patient, reports, etc.)
+│   ├── App.tsx         # Main app entry
+│   ├── main.tsx        # React DOM entry
+│   └── index.css       # Global styles
+├── index.html          # Root HTML
+├── package.json        # Project dependencies & scripts
+├── tailwind.config.ts  # Tailwind config
+├── vite.config.ts      # Vite config
+└── tsconfig.json       # TypeScript config
 
-This project is built with:
+🧑‍💻 Scripts
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+npm run dev → Start dev server
 
-## How can I deploy this project?
+npm run build → Build production app
 
-Simply open [Lovable](https://lovable.dev/projects/7564a4b2-ecbd-422e-8072-89b3df5476a4) and click on Share -> Publish.
+npm run preview → Preview production build
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+npm run lint → Run ESLint checks
