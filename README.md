@@ -45,21 +45,10 @@ npm run dev
 ```
 This starts the app at http://localhost:5173
 
-📂 Project Structure
-├── public/             # Static assets (favicon, robots.txt, etc.)
-├── src/                # Main source code
-│   ├── components/     # UI components (annotation, auth, patient, reports, etc.)
-│   ├── App.tsx         # Main app entry
-│   ├── main.tsx        # React DOM entry
-│   └── index.css       # Global styles
-├── index.html          # Root HTML
-├── package.json        # Project dependencies & scripts
-├── tailwind.config.ts  # Tailwind config
-├── vite.config.ts      # Vite config
-└── tsconfig.json       # TypeScript config
-
-npm run lint → Run ESLint checks
+## Screenshots:
 
 <img width="1417" height="468" alt="Screenshot 2025-11-13 at 7 38 44 PM" src="https://github.com/user-attachments/assets/5c76a107-9f9a-4d81-8d90-1397a0980a99" />
+
+<img width="1440" height="808" alt="Screenshot 2025-11-13 at 7 48 58 PM" src="https://github.com/user-attachments/assets/83633963-67b8-4db3-842b-6ae7de908258" />
 
 
