@@ -76,5 +76,6 @@ npm run preview → Preview production build
 
 npm run lint → Run ESLint checks
 
-<img width="1417" height="468" alt="Screenshot 2025-11-13 at 7 38 44 PM" src="https://github.com/user-attachments/assets/c4ec8720-2a69-42d1-bbd7-54af78d86692" />
+<img width="1417" height="468" alt="Screenshot 2025-11-13 at 7 38 44 PM" src="https://github.com/user-attachments/assets/5c76a107-9f9a-4d81-8d90-1397a0980a99" />
+
 
