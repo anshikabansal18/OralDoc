@@ -28,30 +28,22 @@ An interactive dental annotation and reporting web application built with **Reac
 ```bash
 git clone https://github.com/your-username/dental-annotate-report.git
 cd dental-annotate-report-main
-
-2. Install Dependencies
+```
+### 2. Install Dependencies
 
 Using npm:
-
+```bash
 npm install
-
-
+```
 Or using bun (if installed):
-
+```bash
 bun install
-
-3. Run Development Server
+```
+### 3. Run Development Server:
+```bash
 npm run dev
-
-
+```
 This starts the app at http://localhost:5173
-.
-
-4. Build for Production
-npm run build
-
-5. Preview Production Build
-npm run preview
 
 📂 Project Structure
 ├── public/             # Static assets (favicon, robots.txt, etc.)
@@ -65,14 +57,6 @@ npm run preview
 ├── tailwind.config.ts  # Tailwind config
 ├── vite.config.ts      # Vite config
 └── tsconfig.json       # TypeScript config
-
-🧑‍💻 Scripts
-
-npm run dev → Start dev server
-
-npm run build → Build production app
-
-npm run preview → Preview production build
 
 npm run lint → Run ESLint checks
 
